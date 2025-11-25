@@ -16,7 +16,7 @@ function Navigation() {
       <div className={styles.navContent}>
         <Link to="/" className={styles.logoLink}>
           <img
-            src="/assets/dxxmtxch_logo.png"
+            src="./assets/dxxmtxch_logo.png"
             alt="DxxmTxch Logo"
             className={styles.logo}
           />
