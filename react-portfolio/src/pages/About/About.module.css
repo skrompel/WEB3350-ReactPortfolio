@@ -1,0 +1,87 @@
+.container {
+  min-height: calc(100vh - 80px);
+  padding: 10rem 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #550000;
+  border-bottom: 3px solid #370604;
+  padding-bottom: 1rem;
+  letter-spacing: 3px;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.introText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #a4a3a3;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: rgba(55, 6, 4, 0.3);
+  border: 2px solid #550000;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(85, 0, 0, 0.3);
+}
+
+.cardIcon {
+  color: #550000;
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fefefe;
+}
+
+.cardText {
+  color: #a4a3a3;
+  line-height: 1.6;
+}
+
+.cardList {
+  color: #a4a3a3;
+  line-height: 1.6;
+  padding-left: 1.5rem;
+}
+
+.spacing {
+  margin-top: 1rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #550000;
+  border-bottom: 3px solid #370604;
+  padding-bottom: 1rem;
+  letter-spacing: 3px;
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #a4a3a3;
+}

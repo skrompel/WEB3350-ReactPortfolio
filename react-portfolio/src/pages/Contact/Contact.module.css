@@ -1,0 +1,96 @@
+.container {
+  min-height: calc(100vh - 80px);
+  padding: 10rem 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/public/buck.png");
+  background-size: 35%;
+  background-position: center 60%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #550000;
+  border-bottom: 3px solid #370604;
+  padding-bottom: 1rem;
+  letter-spacing: 3px;
+}
+
+.introText {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #a4a3a3;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #fefefe;
+  font-size: 1.1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: rgba(55, 6, 4, 0.3);
+  border: 2px solid #550000;
+  border-radius: 4px;
+  color: #fefefe;
+  font-size: 1rem;
+  font-family: "Cinzel", "Georgia", serif;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #370604;
+}
+
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: rgba(55, 6, 4, 0.3);
+  border: 2px solid #550000;
+  border-radius: 4px;
+  color: #fefefe;
+  font-size: 1rem;
+  min-height: 150px;
+  resize: vertical;
+  font-family: "Cinzel", "Georgia", serif;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #370604;
+}
+
+.button {
+  background-color: #550000;
+  color: #fefefe;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  letter-spacing: 2px;
+  font-family: "Cinzel", "Georgia", serif;
+}
+
+.button:hover {
+  background-color: #370604;
+}

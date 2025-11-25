@@ -1,0 +1,236 @@
+.container {
+  min-height: calc(100vh - 80px);
+  padding: 10rem 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #550000;
+  border-bottom: 3px solid #370604;
+  padding-bottom: 1rem;
+  letter-spacing: 3px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: rgba(55, 6, 4, 0.3);
+  border: 2px solid #550000;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(85, 0, 0, 0.4);
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  background-color: #370604;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #550000;
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fefefe;
+}
+
+.cardDescription {
+  color: #a4a3a3;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.techStack {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techTag {
+  background-color: #370604;
+  color: #fefefe;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.clickPrompt {
+  margin-top: 1rem;
+  color: #550000;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(2, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modalContent {
+  background-color: #020000;
+  border: 3px solid #550000;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #550000;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 10;
+}
+
+.closeButton:hover {
+  background-color: #370604;
+  transform: rotate(90deg);
+}
+
+.closeButton svg {
+  color: #fefefe;
+}
+
+.modalHeader {
+  background: linear-gradient(135deg, #370604 0%, #550000 100%);
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 3px solid #550000;
+}
+
+.modalIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.modalTitle {
+  font-size: 2rem;
+  color: #fefefe;
+  letter-spacing: 2px;
+}
+
+.modalBody {
+  padding: 2rem;
+}
+
+.modalSection {
+  margin-bottom: 2rem;
+}
+
+.modalSectionTitle {
+  font-size: 1.5rem;
+  color: #550000;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #370604;
+  padding-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.modalText {
+  color: #a4a3a3;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+}
+
+.featureItem {
+  color: #a4a3a3;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.featureItem::before {
+  content: "➢";
+  position: absolute;
+  left: 0;
+}
+
+.modalContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modalContent::-webkit-scrollbar-track {
+  background: #020000;
+}
+
+.modalContent::-webkit-scrollbar-thumb {
+  background: #550000;
+  border-radius: 4px;
+}
+
+.modalContent::-webkit-scrollbar-thumb:hover {
+  background: #370604;
+}

@@ -1,0 +1,32 @@
+.container {
+  min-height: calc(100vh - 80px);
+  padding: 10rem 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #550000;
+  border-bottom: 3px solid #370604;
+  padding-bottom: 1rem;
+  letter-spacing: 3px;
+}
+
+.text {
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #a4a3a3;
+  margin-top: 1rem;
+}
+
+.learnMore {
+  transition: font-size 0.3s;
+  color: #550000;
+}
+
+.learnMore:hover {
+  font-size: larger;
+  border-bottom: 2px solid #550000;
+}
